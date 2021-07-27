@@ -31,7 +31,7 @@ body {
   position: absolute;
   width: 150%;
   height:150%;
-  transform: translate(-15%, -15%);
+  transform: translate(-17%, -15%);
 }
 
 @keyframes rotation {
