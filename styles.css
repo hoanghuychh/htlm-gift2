@@ -1,0 +1,44 @@
+body {
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+.wrapImage {
+  height: 80%;
+  display: flex;
+  position: absolute;
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+  position: absolute;
+  width: 130%;
+  height:130%;
+  top: -15%;
+  left: -15%;
+}
+.image {
+  object-fit: scale-down;
+  position: absolute;
+  width: 150%;
+  height:150%;
+  transform: translate(-15%, -15%);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

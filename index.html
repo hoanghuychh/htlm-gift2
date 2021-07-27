@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gift</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script type="text/javascript">
+			function getUrlVars(url) {
+				var vars = {};
+				var parts = url.replace(
+					/[?&]+([^=&]+)=([^&]*)/gi,
+					function (m, key, value) {
+						vars[key] = decodeURIComponent(value);
+					}
+				);
+				return vars;
+			}
+			const urlVars = getUrlVars(document.URL);
+			const id = urlVars["id"];
+		</script>
+		<link href="./styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="body">
+			<div class="wrap">
+				<img src="./assets/light.png" class="rotate" />
+				<!-- <div class="wrapImage"> -->
+				<img src="./assets/2.png" id="link" class="image" />
+			</div>
+			<!-- </div> -->
+			<script>
+				const data = {
+					gift1: {
+						link: "./assets/1.png",
+					},
+					gift2: {
+						link: "./assets/2.png",
+					},
+					gift3: {
+						link: "./assets/3.png",
+					},
+					gift4: {
+						link: "./assets/4.png",
+					},
+					gift5: {
+						link: "./assets/5.png",
+					},
+					gift6: {
+						link: "./assets/6.png",
+					},
+					gift7: {
+						link: "./assets/7.png",
+					},
+				};
+				if (id === "1") {
+					document.getElementById("link").src = data.gift1.link;
+				}
+				if (id === "2") {
+					document.getElementById("link").src = data.gift2.link;
+				}
+				if (id === "3") {
+					document.getElementById("link").src = data.gift3.link;
+				}
+				if (id === "4") {
+					document.getElementById("link").src = data.gift4.link;
+				}
+				if (id === "5") {
+					document.getElementById("link").src = data.gift5.link;
+				}
+				if (id === "6") {
+					document.getElementById("link").src = data.gift6.link;
+				}
+				if (id === "7") {
+					document.getElementById("link").src = data.gift7.link;
+				}
+			</script>
+		</div>
+	</body>
+</html>
